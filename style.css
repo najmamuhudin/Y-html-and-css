@@ -216,7 +216,7 @@ body {
   width: 110px;
   height: 40px;
   border-radius: 20px;
-  background: white;
+  background:var(--background-color);
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   gap: 5px;
@@ -593,8 +593,9 @@ body {
   color: var(--font-color);
 }
 
-/*contact*/
-.contact-section {
+
+/*Never-Feel-Hungry-section*/
+.Never-Feel-Hungry-section{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -651,6 +652,425 @@ body {
   margin: 20rem 5rem 0 0;
 }
 
+.btns-with-out {
+  border: 1.5px solid var(--primary-color);
+  border-radius: 30px;
+}
+
+.all-btn-with-out-bgc {
+  outline: none;
+  background: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--font-color);
+  width: 120px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.all-btn-with-out-bgc img {
+  width: 20px;
+  height: 17px;
+}
+
+
+
+/* ABOUT */
+.about{
+  padding:60px 0 30px;
+  text-align:center;
+}
+.subtitle{
+  font-size:1.3rem;
+   color:var(--font2-color); 
+   margin-bottom:6px;
+  }
+.section-title{
+  letter-spacing:6px;
+  color:var(--font2-color);
+  margin-bottom:28px;
+  font-size:30px;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 380px 1fr;
+  gap:24px;
+  margin-top:18px;
+}
+.about-img{
+  height:400px;
+  background-size:cover;
+  border-radius:2px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+.left-img{
+  background-image: url('Assetes/abo2.jpg');
+   }
+.right-img{
+  background-image: url('Assetes/5.jpg');
+
+   
+  }
+
+.about-card{
+  height:400px;
+  background:var(--right-backgroundcol);
+  border-radius:4px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+}
+.card-small{
+  color:var(--font2-color); 
+  margin-bottom:1rem;
+   padding-top:7rem;
+}
+.card-title{
+  color:var(--font2-color);
+  font-size:22px;
+  margin-bottom:1rem;
+  letter-spacing:2px;
+
+}
+.card-text{
+  color:var(--font2-color);
+   margin-bottom:3rem
+  }
+  .btn-ghost{
+  border: 1px solid var(--primary-color);
+  padding:10px 18px;
+  text-decoration:none;
+  color:var(--text);
+  border-radius:6px;
+  font-weight:600;
+  
+}
+
+/* MENU / SPECIAL MEAL */
+  .SPECIAL-MEAL-section {
+  padding: 40px 20px;
+  background: var(--background-color);
+ 
+}
+
+.SPECIAL-MEAL-wrap {
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  gap: 5rem;
+ 
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.dish-SPECIAL-MEAL {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  font-weight: 600;
+  color: var(--font2-color);
+  gap: 10px;
+}
+
+.dish-title-SPECIAL-MEAL {
+  font-size: 1rem;
+}
+
+.pricing-item-boder {
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 1px;
+}
+
+.price-SPECIAL-MEAL {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.pricing-p {
+  font-size: 0.9rem;
+  color:var(--color);
+  margin-top: 0.3rem;
+  margin-left: 5px;
+  max-width: 380px;
+}
+
+.btn-outline {
+  padding: 12px 20px;
+  background-color: var(--primary-color);
+  color: var(--font2-color);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.SPECIAL-MEAL-right .food-photo img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/*hero*/
+.hero{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.826) 0%, 
+  rgba(239, 235, 235, 0.927) 50%),
+   url('Assetes/ab3.jpg') center/cover no-repeat;
+  height:300px;
+}
+.hero-inner{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:20px;
+}
+.hero h1{
+  margin:0;
+  font-size:34px;
+  letter-spacing:1px;
+}
+.hero .breadcrumb{
+  opacity:0.8;
+   margin-top:8px;
+  }
+
+/* main layout */
+.page{
+  margin-top:5rem;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:2rem;
+  margin-left:10rem;
+  
+}
+
+/* grid of cards */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+ 
+}
+.card{
+  background:var(--card);
+  border-radius:10px;
+  box-shadow: 0 6px 18px rgba(48,40,40,0.06);
+  padding-bottom:14px;
+  width:200px;
+}
+
+.card-img img{
+  width:200px;
+   height:140px; 
+    border-radius:3px;
+  
+  }
+
+.card-body{
+  padding:0 18px 20px;
+}
+.card-body .muted{
+  color:var(--font2-color); 
+  font-size:12px; 
+  margin-bottom:6px;
+}
+.card-body h3{
+  margin:0 0 8px; 
+  font-size:16px;
+}
+.price{
+  font-weight:700;
+}
+.price .old{
+  color:var(--font2-color);
+   text-decoration:line-through; 
+   margin-left:8px; 
+   font-weight:500;
+  }
+
+/* sidebar widgets */
+.sidebar .widget{
+  background:var(--background-color);
+  padding:10px;
+  border-radius:10px;
+  margin-bottom:1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  width:300px;
+}
+.widget h4{
+  margin:0 0 10px;
+   font-size:14px;
+  }
+.search input{
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid rgba(0,0,0,0.06);
+}
+
+.widget img{
+  width:20px;
+  height:20px;
+}
+.categories ul{
+  list-style:none; 
+  padding:0; 
+  margin:0;
+}
+.categories li{
+  display:flex;
+   justify-content:space-between;
+    padding:8px 6px;
+     color:var(--color);
+  border-bottom:1px dashed rgba(0,0,0,0.03);
+}
+.price-filter input{
+  width:100%
+}
+.top-list{
+  list-style:none;
+ 
+}
+.top-list li{
+  display:flex;
+   gap:10px; 
+   align-items:center;
+    padding:8px 0;
+     border-bottom:1px solid rgba(0,0,0,0.03);
+    }
+.top-list img{
+  width:56px;
+  height:44px; 
+  object-fit:cover; 
+  border-radius:6px;
+}
+.tp-title{
+  margin:0; 
+  font-size:13px;
+}
+.tp-price{
+  font-weight:700; 
+  color:var(--font2-color);
+}
+
+
+
+/*contact*/
+.contact-section {
+  background-color:var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  margin-top:5rem;
+}
+
+.contact-left {
+  width: 45%;
+  margin-left:1.5rem;
+}
+
+.contact-left h3{
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing:0.2rem;
+  color:var(--font2-color);
+  margin: 0.5rem 0;
+}
+.contact-left h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color:var(--font2-color);
+  margin: 0.5rem 0;
+  
+}
+
+.contact-left span {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color:var(--font-color);
+  line-height: 2.5rem;
+
+}
+
+.contact-left p {
+  font-size:1rem;
+  font-weight: 350;
+  font-style: italic;
+  margin: 0.5rem 0;
+  line-height: 2.5rem;
+}
+
+
+
+.contact-icon img{
+width:20px;
+
+
+}
+.contact-icon span{
+  font-size:1.1rem;
+  font-weight: 300;
+  font-style: italic;
+  color:var(--font2-color);
+ margin-left:0.2rem;
+ 
+}
+.contact-icon span:hover{
+  color:var(--primary-color);
+}
+
+
+.contact-right {
+  width: 45%;
+  padding-top:6rem;
+}
+
+.contact-right h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  color:var(--font-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  border: none;
+  border-bottom: 1px dotted var(--font-color);
+  padding: 0.8rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+ 
+}
+
+
+
+.buttonn:hover {
+  background:var(--background-color);
+  color:var(--font2-color);
+  border: 1px solid var(--primary-color);
+} 
+
+.map-container {
+  border-radius: 8px;
+  margin-top:5rem;
+  height: 20px; 
+  margin-bottom:25rem;
+  
+}
+
+
 /*footer*/
 .footer {
   display: flex;
@@ -674,7 +1094,7 @@ body {
 .newsletter-title {
   font-size:2.1rem;
   font-weight: 600;
-  color: #000;
+  color:var(--font2-color);
   margin-bottom: 10px;
 }
 
@@ -773,6 +1193,98 @@ body {
   }
 }
 
+.SPECIAL-MEAL-right .food-photo img {
+  animation-name: slideRight;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(5%);
+    opacity: 1;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
+.left-img{
+   animation-name: slideLeft;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.right-img{
+    animation-name: slideRight;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.about-card {
+  animation-name: fromTop;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fromTop {
+  0% {
+    transform: translateY(-30%); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+}
+
+.page{
+   animation-name: fromBottom;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+@keyframes fromBottom {
+  0% {
+    transform: translateY(30%); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+}
 
 
 
@@ -787,6 +1299,7 @@ body {
   .nav {
     display: flex;
     gap:5px;
+    
   }
 .logo {
   font-size: 1rem;
@@ -804,6 +1317,7 @@ body {
   display: flex;
   gap: 15px;
   padding-left:0;
+ margin-top:2rem;
 }
 
 .menus ul li{
@@ -1110,13 +1624,95 @@ display: none;
 }
 
 
-  /* Footer */
 
-  .social-icons {
-    justify-content:flex-start;
+  /* ABOUT SECTION */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-left:1rem;
   }
+
+  .left-img{
+display: none;
+  }
+  .right-img{
+    height: 400px;
+    width:700px;
+  }
+  .about-card{
+    display: none;
+  }
+
+  .card-small {
+    padding-top: 3rem;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    letter-spacing: 4px;
+  }
+
+  /* SPECIAL MEAL SECTION */
+  .SPECIAL-MEAL-wrap {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .SPECIAL-MEAL-right .food-photo img {
+    height: 320px;
+  }
+
+  .dish-SPECIAL-MEAL {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .btn-outline {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+  .SPECIAL-MEAL-right .food-photo img {
+    display: none;
+  }
+  .page{
+  margin-top:3rem;
+  margin-left:3rem;
+  
+}
+  .sidebar .widget{
+  display: none;
+}
+  .footer {
+  display:grid;
+  
+}
 }
 
+.all-btn-bg {
+  cursor: pointer;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+.all-btn-bg:active,
+.all-btn-bg:hover {
+  animation-name: growButton;
+}
+
+/* Keyframes animation */
+@keyframes growButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.7); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
 
 
 
@@ -1337,6 +1933,25 @@ display: none;
   .image-side {
     display: none;
   }
+
+  /*about*/
+   .right-img{
+    height: 300px;
+    width:400px;
+  
+  }
+
+  /*blog*/
+  .page{
+  margin-left:0rem;
+  
+}
+  .grid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:10px;
+
+}
 
   /* Footer*/
   .footer {
