@@ -33,6 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  margin-top:2rem;
 }
 
 .logo {
@@ -694,7 +695,7 @@ body {
 
 .about-grid{
   display:grid;
-  grid-template-columns:1fr 380px 1fr;
+  grid-template-columns:1fr 1fr 1fr;
   gap:24px;
   margin-top:18px;
 }
@@ -754,7 +755,7 @@ body {
 
 .SPECIAL-MEAL-wrap {
   display: grid;
-  grid-template-columns: 1fr 440px;
+  grid-template-columns: 1fr 1fr;
   gap: 5rem;
  
 }
@@ -815,28 +816,13 @@ ul li {
 }
 
 
-/*hero*/
+/*hero-blog*/
 .hero{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.826) 0%, 
   rgba(239, 235, 235, 0.927) 50%),
    url('Assetes/ab3.jpg') center/cover no-repeat;
   height:300px;
 }
-.hero-inner{
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  gap:20px;
-}
-.hero h1{
-  margin:0;
-  font-size:34px;
-  letter-spacing:1px;
-}
-.hero .breadcrumb{
-  opacity:0.8;
-   margin-top:8px;
-  }
 
 /* main layout */
 .page{
@@ -851,7 +837,7 @@ ul li {
 /* grid of cards */
 .grid{
   display:grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
   gap:10px;
  
 }
@@ -860,12 +846,12 @@ ul li {
   border-radius:10px;
   box-shadow: 0 6px 18px rgba(48,40,40,0.06);
   padding-bottom:14px;
-  width:200px;
+  /* width:200px; */
 }
 
 .card-img img{
-  width:200px;
-   height:140px; 
+  width:100%;
+   height:250px; 
     border-radius:3px;
   
   }
@@ -1946,12 +1932,12 @@ display: none;
   margin-left:0rem;
   
 }
-  .grid{
+  /* .grid{
   display:grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(1,1fr);
   gap:10px;
 
-}
+} */
 
   /* Footer*/
   .footer {
